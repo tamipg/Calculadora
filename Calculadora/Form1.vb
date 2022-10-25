@@ -278,4 +278,13 @@
         Me.Text = "Calculadora Científica"
     End Sub
 
+    ' HELP
+    Private Sub help_Click(sender As Object, e As EventArgs) Handles help.Click
+        Dim helpText As String
+        helpText = "Ayuda de la calculadora" & Environment.NewLine & Environment.NewLine &
+            "Escriba sus operandos y elija una operación para obtener sus cálculos. "
+        AyudaForm.TextBoxHelp.Text = helpText
+        My.Forms.AyudaForm.Show()
+    End Sub
+
 End Class

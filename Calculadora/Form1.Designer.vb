@@ -54,8 +54,10 @@ Partial Class Form1
         Me.backSpaceButton = New System.Windows.Forms.Button()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.std = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.sci = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.help = New System.Windows.Forms.ToolStripLabel()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -400,7 +402,7 @@ Partial Class Form1
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.std, Me.ToolStripSeparator1, Me.sci})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.std, Me.ToolStripSeparator2, Me.sci, Me.ToolStripSeparator1, Me.help})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(322, 25)
@@ -413,16 +415,27 @@ Partial Class Form1
         Me.std.Size = New System.Drawing.Size(52, 22)
         Me.std.Text = "Estándar"
         '
-        'ToolStripSeparator1
+        'ToolStripSeparator2
         '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'sci
         '
         Me.sci.Name = "sci"
         Me.sci.Size = New System.Drawing.Size(57, 22)
         Me.sci.Text = "Científica"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
+        '
+        'help
+        '
+        Me.help.Name = "help"
+        Me.help.Size = New System.Drawing.Size(41, 22)
+        Me.help.Text = "Ayuda"
         '
         'Form1
         '
@@ -473,9 +486,11 @@ Partial Class Form1
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents std As ToolStripLabel
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents sci As ToolStripLabel
+    Friend WithEvents help As ToolStripLabel
     Friend WithEvents factorialButton As Button
     Friend WithEvents potenciaButton As Button
     Friend WithEvents cuboButton As Button
     Friend WithEvents cuadradoButton As Button
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents sci As ToolStripLabel
 End Class
