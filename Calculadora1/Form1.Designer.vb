@@ -23,6 +23,10 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.factorialButton = New System.Windows.Forms.Button()
+        Me.potenciaButton = New System.Windows.Forms.Button()
+        Me.cuboButton = New System.Windows.Forms.Button()
+        Me.cuadradoButton = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.textInput = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -52,10 +56,6 @@ Partial Class Form1
         Me.std = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.sci = New System.Windows.Forms.ToolStripLabel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -64,16 +64,52 @@ Partial Class Form1
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.factorialButton)
+        Me.Panel1.Controls.Add(Me.potenciaButton)
+        Me.Panel1.Controls.Add(Me.cuboButton)
+        Me.Panel1.Controls.Add(Me.cuadradoButton)
         Me.Panel1.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(322, 399)
         Me.Panel1.TabIndex = 0
+        '
+        'factorialButton
+        '
+        Me.factorialButton.Location = New System.Drawing.Point(259, 243)
+        Me.factorialButton.Name = "factorialButton"
+        Me.factorialButton.Size = New System.Drawing.Size(55, 45)
+        Me.factorialButton.TabIndex = 9
+        Me.factorialButton.Text = "n!"
+        Me.factorialButton.UseVisualStyleBackColor = True
+        '
+        'potenciaButton
+        '
+        Me.potenciaButton.Location = New System.Drawing.Point(259, 192)
+        Me.potenciaButton.Name = "potenciaButton"
+        Me.potenciaButton.Size = New System.Drawing.Size(55, 45)
+        Me.potenciaButton.TabIndex = 8
+        Me.potenciaButton.Text = "x^y"
+        Me.potenciaButton.UseVisualStyleBackColor = True
+        '
+        'cuboButton
+        '
+        Me.cuboButton.Location = New System.Drawing.Point(259, 141)
+        Me.cuboButton.Name = "cuboButton"
+        Me.cuboButton.Size = New System.Drawing.Size(55, 45)
+        Me.cuboButton.TabIndex = 7
+        Me.cuboButton.Text = "x^3"
+        Me.cuboButton.UseVisualStyleBackColor = True
+        '
+        'cuadradoButton
+        '
+        Me.cuadradoButton.Location = New System.Drawing.Point(259, 90)
+        Me.cuadradoButton.Name = "cuadradoButton"
+        Me.cuadradoButton.Size = New System.Drawing.Size(55, 45)
+        Me.cuadradoButton.TabIndex = 6
+        Me.cuadradoButton.Text = "x^2"
+        Me.cuadradoButton.UseVisualStyleBackColor = True
         '
         'TableLayoutPanel1
         '
@@ -388,42 +424,6 @@ Partial Class Form1
         Me.sci.Size = New System.Drawing.Size(57, 22)
         Me.sci.Text = "Científica"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(259, 90)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(55, 45)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "x^2"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(259, 141)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(55, 45)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "x^3"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(259, 192)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(55, 45)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "x^y"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(259, 243)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(55, 45)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "n!"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -474,8 +474,8 @@ Partial Class Form1
     Friend WithEvents std As ToolStripLabel
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents sci As ToolStripLabel
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents factorialButton As Button
+    Friend WithEvents potenciaButton As Button
+    Friend WithEvents cuboButton As Button
+    Friend WithEvents cuadradoButton As Button
 End Class

@@ -1,11 +1,4 @@
 ﻿
-
-
-
-' Menú que permita pasar de modo estándar a modo científica (por ejemplo: Ver --> Estándar | Científica )
-' En el modo cientifico, implementaremos las siguientes funciones: x^ 2, x ^ 3, x ^ y, n!
-
-
 Public Class Form1
     Dim Operando1 As Double
     Dim Operando2 As Double
@@ -40,7 +33,6 @@ Public Class Form1
             Operacion = "+"
             Operando1 = Val(textInput.Text)
             interruptor = True
-            '  textHistorial.Text = Operando1.ToString
         Else
             igualButton.PerformClick()
             Operacion = "+"
@@ -54,7 +46,6 @@ Public Class Form1
             Operacion = "-"
             Operando1 = Val(textInput.Text)
             interruptor = True
-            '   textHistorial.Text = Operando1.ToString
         Else
             igualButton.PerformClick()
             Operacion = "-"
@@ -67,7 +58,6 @@ Public Class Form1
             Operacion = "*"
             Operando1 = Val(textInput.Text)
             interruptor = True
-            '  textHistorial.Text = Operando1.ToString
         Else
             igualButton.PerformClick()
             Operacion = "*"
@@ -80,7 +70,6 @@ Public Class Form1
             Operacion = "/"
             Operando1 = Val(textInput.Text)
             interruptor = True
-            ' textHistorial.Text = Operando1.ToString
         Else
             igualButton.PerformClick()
             Operacion = "/"
@@ -90,18 +79,65 @@ Public Class Form1
     ' BOTON INVERSA
     Private Sub inversaButton_Click(sender As Object, e As EventArgs) Handles inversaButton.Click
         Operando1 = Val(textInput.Text)
-        ' textHistorial.Text = "1/ " + Operando1.ToString
         Result = 1 / Operando1
         Operacion = "1/x"
         interruptor = True
         textInput.Text = Result.ToString
-        Operando1 = Val(Result)
+        Operando1 = Result
+    End Sub
+
+
+    'BOTON CUADRADO
+    Private Sub cuadradoButton_Click(sender As Object, e As EventArgs) Handles cuadradoButton.Click
+        Operando1 = Val(textInput.Text)
+        Result = Operando1 ^ 2
+        interruptor = True
+        textInput.Text = Result.ToString
+        Operando1 = Result
+    End Sub
+
+    ' BOTON CUBO
+    Private Sub cuboButton_Click(sender As Object, e As EventArgs) Handles cuboButton.Click
+        Operando1 = Val(textInput.Text)
+        Result = Operando1 ^ 3
+        interruptor = True
+        textInput.Text = Result.ToString
+        Operando1 = Result
+    End Sub
+
+    ' BOTON POTENCIA
+    Private Sub potenciaButton_Click(sender As Object, e As EventArgs) Handles potenciaButton.Click
+        If Operacion = "" Then
+            Operacion = "^"
+            Operando1 = Val(textInput.Text)
+            interruptor = True
+        Else
+            igualButton.PerformClick()
+            Operacion = "^"
+        End If
+    End Sub
+
+    ' BOTON FACTORIAL
+    Private Sub factorialButton_Click(sender As Object, e As EventArgs) Handles factorialButton.Click
+        Operando1 = Val(textInput.Text)
+        interruptor = True
+
+        If Operando1 > 0 Then
+            Result = 1
+            For i = 1 To Operando1
+                Result = Result * i
+            Next i
+        Else
+            Result = 1
+        End If
+
+        textInput.Text = Result.ToString
+        Operando1 = Result
     End Sub
 
     ' BOTON PORCENTAJE
     Private Sub porcentajeButton_Click(sender As Object, e As EventArgs) Handles porcentajeButton.Click
         Operando2 = Val(textInput.Text)
-        ' textHistorial.Text = Operando2
         interruptor = True
 
         If Operacion = "+" Then
@@ -139,7 +175,6 @@ Public Class Form1
             Operacion = ""
             Operando1 = Result
             interruptor = True
-            '    textHistorial.Text = Operando1.ToString
             ' RESTA
         ElseIf Operacion = "-" Then
             Result = Operando1 - Operando2
@@ -147,7 +182,6 @@ Public Class Form1
             Operacion = ""
             Operando1 = Result
             interruptor = True
-            '   textHistorial.Text = Operando1.ToString
             ' MULTIPLICACION
         ElseIf Operacion = "*" Then
             Result = Operando1 * Operando2
@@ -155,7 +189,6 @@ Public Class Form1
             Operacion = ""
             Operando1 = Result
             interruptor = True
-            '  textHistorial.Text = Operando1.ToString
             ' DIVISION
         ElseIf Operacion = "/" Then
             Result = Operando1 / Operando2
@@ -163,10 +196,16 @@ Public Class Form1
             Operacion = ""
             Operando1 = Result
             interruptor = True
-            ' textHistorial.Text = Operando1.ToString
             ' PORCENTAJE
         ElseIf Operacion = "%" Then
             textInput.Text = Result.ToString
+            ' POTENCIA
+        ElseIf Operacion = "^" Then
+            Result = Operando1 ^ Operando2
+            textInput.Text = Result.ToString
+            Operacion = ""
+            Operando1 = Result
+            interruptor = True
         End If
 
     End Sub
@@ -184,10 +223,6 @@ Public Class Form1
             Operando1 = textInput.Text
         End If
     End Sub
-
-
-
-
 
     ' BOTON CAMBIO DE SIGNO
     Private Sub signoButton_Click(sender As Object, e As EventArgs) Handles signoButton.Click
@@ -244,4 +279,5 @@ Public Class Form1
         Me.Width = 338
         Me.Text = "Calculadora Científica"
     End Sub
+
 End Class
