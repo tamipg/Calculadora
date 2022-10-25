@@ -1,0 +1,12 @@
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\bin\Debug\Calculadora1.exe.config
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\bin\Debug\Calculadora1.exe
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\bin\Debug\Calculadora1.pdb
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\bin\Debug\Calculadora1.xml
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\obj\Debug\Calculadora1.vbproj.AssemblyReference.cache
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\obj\Debug\Calculadora1.Form1.resources
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\obj\Debug\Calculadora1.Resources.resources
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\obj\Debug\Calculadora1.vbproj.GenerateResource.cache
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\obj\Debug\Calculadora1.vbproj.CoreCompileInputs.cache
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\obj\Debug\Calculadora1.exe
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\obj\Debug\Calculadora1.xml
+C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora1\Calculadora1\obj\Debug\Calculadora1.pdb
