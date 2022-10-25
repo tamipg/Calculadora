@@ -1,5 +1,11 @@
 ﻿
 
+
+
+' Menú que permita pasar de modo estándar a modo científica (por ejemplo: Ver --> Estándar | Científica )
+' En el modo cientifico, implementaremos las siguientes funciones: x^ 2, x ^ 3, x ^ y, n!
+
+
 Public Class Form1
     Dim Operando1 As Double
     Dim Operando2 As Double
@@ -11,6 +17,8 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Operacion = ""
         textInput.Text = 0
+        Me.Width = 270
+        Me.Text = "Calculadora Estándar"
     End Sub
 
     ' BOTONES NUMERICOS
@@ -32,7 +40,7 @@ Public Class Form1
             Operacion = "+"
             Operando1 = Val(textInput.Text)
             interruptor = True
-            textHistorial.Text = Operando1.ToString
+            '  textHistorial.Text = Operando1.ToString
         Else
             igualButton.PerformClick()
             Operacion = "+"
@@ -46,7 +54,7 @@ Public Class Form1
             Operacion = "-"
             Operando1 = Val(textInput.Text)
             interruptor = True
-            textHistorial.Text = Operando1.ToString
+            '   textHistorial.Text = Operando1.ToString
         Else
             igualButton.PerformClick()
             Operacion = "-"
@@ -59,7 +67,7 @@ Public Class Form1
             Operacion = "*"
             Operando1 = Val(textInput.Text)
             interruptor = True
-            textHistorial.Text = Operando1.ToString
+            '  textHistorial.Text = Operando1.ToString
         Else
             igualButton.PerformClick()
             Operacion = "*"
@@ -72,7 +80,7 @@ Public Class Form1
             Operacion = "/"
             Operando1 = Val(textInput.Text)
             interruptor = True
-            textHistorial.Text = Operando1.ToString
+            ' textHistorial.Text = Operando1.ToString
         Else
             igualButton.PerformClick()
             Operacion = "/"
@@ -82,7 +90,7 @@ Public Class Form1
     ' BOTON INVERSA
     Private Sub inversaButton_Click(sender As Object, e As EventArgs) Handles inversaButton.Click
         Operando1 = Val(textInput.Text)
-        textHistorial.Text = "1/ " + Operando1.ToString
+        ' textHistorial.Text = "1/ " + Operando1.ToString
         Result = 1 / Operando1
         Operacion = "1/x"
         interruptor = True
@@ -93,7 +101,7 @@ Public Class Form1
     ' BOTON PORCENTAJE
     Private Sub porcentajeButton_Click(sender As Object, e As EventArgs) Handles porcentajeButton.Click
         Operando2 = Val(textInput.Text)
-        textHistorial.Text = Operando2
+        ' textHistorial.Text = Operando2
         interruptor = True
 
         If Operacion = "+" Then
@@ -131,7 +139,7 @@ Public Class Form1
             Operacion = ""
             Operando1 = Result
             interruptor = True
-            textHistorial.Text = Operando1.ToString
+            '    textHistorial.Text = Operando1.ToString
             ' RESTA
         ElseIf Operacion = "-" Then
             Result = Operando1 - Operando2
@@ -139,7 +147,7 @@ Public Class Form1
             Operacion = ""
             Operando1 = Result
             interruptor = True
-            textHistorial.Text = Operando1.ToString
+            '   textHistorial.Text = Operando1.ToString
             ' MULTIPLICACION
         ElseIf Operacion = "*" Then
             Result = Operando1 * Operando2
@@ -147,7 +155,7 @@ Public Class Form1
             Operacion = ""
             Operando1 = Result
             interruptor = True
-            textHistorial.Text = Operando1.ToString
+            '  textHistorial.Text = Operando1.ToString
             ' DIVISION
         ElseIf Operacion = "/" Then
             Result = Operando1 / Operando2
@@ -155,7 +163,7 @@ Public Class Form1
             Operacion = ""
             Operando1 = Result
             interruptor = True
-            textHistorial.Text = Operando1.ToString
+            ' textHistorial.Text = Operando1.ToString
             ' PORCENTAJE
         ElseIf Operacion = "%" Then
             textInput.Text = Result.ToString
@@ -206,7 +214,7 @@ Public Class Form1
     ' BOTON C
     Private Sub clearButton_Click(sender As Object, e As EventArgs) Handles clearButton.Click
         textInput.Text = 0
-        textHistorial.Text = 0
+        ' textHistorial.Text = 0
         Operando1 = 0
         Operando2 = 0
         Operacion = ""
@@ -225,4 +233,15 @@ Public Class Form1
         If textInput.Text = "" Then textInput.Text = "0"
     End Sub
 
+    ' CALCULADORA ESTANDAR
+    Private Sub std_Click(sender As Object, e As EventArgs) Handles std.Click
+        Me.Width = 270
+        Me.Text = "Calculadora Estándar"
+    End Sub
+
+    ' CALCULADORA CIENTIFICA
+    Private Sub sci_Click(sender As Object, e As EventArgs) Handles sci.Click
+        Me.Width = 338
+        Me.Text = "Calculadora Científica"
+    End Sub
 End Class
