@@ -1,5 +1,4 @@
-﻿
-Public Class Form1
+﻿Public Class Form1
     Dim Operando1 As Double
     Dim Operando2 As Double
     Dim Result As Double
@@ -249,7 +248,6 @@ Public Class Form1
     ' BOTON C
     Private Sub clearButton_Click(sender As Object, e As EventArgs) Handles clearButton.Click
         textInput.Text = 0
-        ' textHistorial.Text = 0
         Operando1 = 0
         Operando2 = 0
         Operacion = ""

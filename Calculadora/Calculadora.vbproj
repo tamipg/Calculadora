@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4063F5F-0DBA-420D-BB11-F9C6D97F6D5A}</ProjectGuid>
+    <ProjectGuid>{4445F0DA-21B3-4987-88EC-9DDD7236ACFB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Calculadora1.My.MyApplication</StartupObject>
-    <RootNamespace>Calculadora1</RootNamespace>
-    <AssemblyName>Calculadora1</AssemblyName>
+    <StartupObject>Calculadora.My.MyApplication</StartupObject>
+    <RootNamespace>Calculadora</RootNamespace>
+    <AssemblyName>Calculadora</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Calculadora1.xml</DocumentationFile>
+    <DocumentationFile>Calculadora.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Calculadora1.xml</DocumentationFile>
+    <DocumentationFile>Calculadora.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

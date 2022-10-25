@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
 
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")> _
-        Friend ReadOnly Property Settings() As Global.Calculadora1.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Calculadora.My.MySettings
             Get
-                Return Global.Calculadora1.My.MySettings.Default
+                Return Global.Calculadora.My.MySettings.Default
             End Get
         End Property
     End Module

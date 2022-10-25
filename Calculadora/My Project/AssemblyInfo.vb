@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("Calculadora1")>
+<Assembly: AssemblyTitle("Calculadora")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("HP Inc.")>
-<Assembly: AssemblyProduct("Calculadora1")>
+<Assembly: AssemblyProduct("Calculadora")>
 <Assembly: AssemblyCopyright("Copyright © HP Inc. 2022")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-<Assembly: Guid("dc281d00-807e-4c16-9735-d0ac3218e990")>
+<Assembly: Guid("a0d4698e-6ec4-47fd-aca5-58e1ff18b3a5")>
 
 ' La información de versión de un ensamblado consta de los cuatro valores siguientes:
 '
