@@ -23,3 +23,4 @@ C:\Users\tamip\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\tamip\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.xml
 C:\Users\tamip\Desktop\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
 C:\Users\tamip\Desktop\DAM22-23\DI\Calculadora\Calculadora\obj\Debug\Calculadora.AyudaForm.resources
+C:\Users\tamip\Desktop\calculadora\Calculadora\obj\Debug\Calculadora.AyudaForm.resources
